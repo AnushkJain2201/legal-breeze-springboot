@@ -51,7 +51,8 @@ public class Bid {
     @JoinColumn(name = "user_id")
     private User user;
 
-    // Constructor for creating new bids (without bidId, hearings, noOfApplicants, status, user)
+    // Constructor for creating new bids (without bidId, hearings, noOfApplicants,
+    // status, user)
     public Bid(String issue, String description, Integer budget, Date startDate, Date deadline) {
         this.issue = issue;
         this.description = description;
